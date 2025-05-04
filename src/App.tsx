@@ -9,6 +9,10 @@ import NotFound from "./pages/NotFound";
 import NetworkScan from "./pages/NetworkScan";
 import PortScan from "./pages/PortScan";
 import VulnAssessment from "./pages/VulnAssessment";
+import Terminal from "./pages/Terminal";
+import WebTools from "./pages/WebTools";
+import PasswordTools from "./pages/PasswordTools";
+import Links from "./pages/Links";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +27,10 @@ const App = () => (
           <Route path="/network-scan" element={<NetworkScan />} />
           <Route path="/port-scan" element={<PortScan />} />
           <Route path="/vuln-assessment" element={<VulnAssessment />} />
+          <Route path="/web-tools" element={<WebTools />} />
+          <Route path="/terminal" element={<Terminal />} />
+          <Route path="/password-tools" element={<PasswordTools />} />
+          <Route path="/links" element={<Links />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
