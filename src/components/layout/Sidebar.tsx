@@ -45,7 +45,8 @@ const Sidebar: React.FC = () => {
                   }`
                 }
               >
-                <span className={({ isActive }) => isActive ? 'text-cyber-blue' : ''}>{item.icon}</span>
+                {/* Fix: Removing the isActive prop from the span */}
+                <span className="flex-shrink-0">{item.icon}</span>
                 <span>{item.label}</span>
               </NavLink>
             </li>
